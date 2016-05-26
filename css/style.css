@@ -22,6 +22,17 @@
   font-family: 'brando';
 }
 
+
+
+.navbar-right ul li:hover #title-brando {
+    background: white;
+}
+#title-brando:hover {
+    background-color: #FF3876;
+}
+
+
+
 @media only screen and (max-width: 580px) {
 
 
