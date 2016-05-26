@@ -10,12 +10,16 @@
 }
 /*--------First Bar-------*/
 .sing-up{
-    background-color: #1E2625;
+    background-color: #293332;
     height: 60px;
 }
 .navbar-default {
-    background-color: #1E2625;
-    border-color: #1E2625;
+    background-color: #293332;
+    border-color: #293332;
+}
+#title-brando{
+  color: white;
+  font-family: 'brando';
 }
 
 @media only screen and (max-width: 580px) {
