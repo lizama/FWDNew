@@ -425,3 +425,7 @@ ul.redes li a
   text-align:center;
   padding-top: 97%;
 }
+
+#social-icon:hover{
+    color: #FF3876;
+}
