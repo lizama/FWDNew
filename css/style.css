@@ -13,14 +13,29 @@
 
 
 /*--------First Bar-------*/
+
 .sing-up{
     background-color: #293332;
     height: 60px;
+
 }
 .navbar-default {
     background-color: #293332;
     border-color: #293332;
+
 }
+
+.sing-upt{
+    background-color: rgba(0, 0, 0, 0.0);
+    height: 60px;
+
+}
+.navbar-defaultt{
+    background-color: rgba(0, 0, 0, 0.0);
+    border-color:rgba(0, 0, 0, 0.0);
+}
+
+
 #title-brando{
   color: white;
   font-family: 'brando';
@@ -34,7 +49,7 @@
 #title-brando:hover {
     background-color: #FF3876;
 }
-/* Radio button 
+/* Radio button
 .e-singup{
     top: 10px;
     position: fixed;

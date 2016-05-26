@@ -55,22 +55,36 @@ function togNav() {
 $(document).ready(function(){
     var altura = $('#navBar').offset().top; //saber altura
 
-    
+    var singup = $('.sing-up');///right bar
+    var navBar = $('.navbar-default');/// resto de navbar izquierda
+
+
     altura -=60;
     alert(altura);
 
-
+    singup.addClass('sing-upt');
+    navBar.addClass('navbar-defaultt');
 
     $(window).on('scroll',function(){
         if ( $(window).scrollTop() > altura) {
             $('.menu').removeClass('menuu');
 
+            //Transparencia de barra
+            singup.removeClass('sing-upt');
+            navBar.removeClass('navbar-defaultt');
 
             $('.menu').addClass('menu-fixed');
 
         }
         else {
             $('.menu').removeClass('menu-fixed');
+
+            //Transparencia
+            singup.addClass('sing-upt');
+            navBar.addClass('navbar-defaultt');
+
+
+
         }
 
     });
