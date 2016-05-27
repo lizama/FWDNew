@@ -90,7 +90,7 @@ $(document).ready(function(){
 
     });
 
-
+/*
 ///----------------Width pagina ------------------
 var windowWidth = $(window).width();
 alert(windowWidth);
@@ -107,4 +107,4 @@ alert(windowWidth);
        }
     });
 
-});
+});*/
