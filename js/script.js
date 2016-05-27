@@ -51,7 +51,7 @@ function togNav() {
 }
 */
 
-
+/*----------NavBars scripts --------------*/
 $(document).ready(function(){
     var altura = $('#navBar').offset().top; //saber altura
 
@@ -87,5 +87,24 @@ $(document).ready(function(){
 
         }
 
+
     });
+
+
+///----------------Width pagina ------------------
+var windowWidth = $(window).width();
+alert(windowWidth);
+    $(window).resize(function() {
+        alert(windowWidth);
+       if(screen.width == window.innerWidth){
+
+           alert(windowWidth);
+           alert("you are on normal page with 100% zoom");
+       } else if(screen.width > window.innerWidth){
+           alert("you have zoomed in the page i.e more than 100%");
+       } else {
+           alert("you have zoomed out i.e less than 100%");
+       }
+    });
+
 });

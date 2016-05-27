@@ -426,6 +426,7 @@ ul.redes li a
   padding-top: 97%;
 }
 
+/*Highlights social icons*/
 #social-icon:hover{
     color: #FF3876;
 }
