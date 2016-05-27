@@ -18,7 +18,7 @@
 
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
-
+  <link rel="stylesheet" type="text/css" href="css/thumnail.css">
   <style type="text/css">
 
   html, body {
@@ -156,8 +156,29 @@
   </nav>
 
   <div id="pushBack"></div>
+  <!-- Seccion de noticias -->
   <section>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis quasi, natus, suscipit est, at enim obcaecati ipsam tempore ipsa nisi explicabo incidunt, molestias magnam quos autem perferendis quis maxime sit. Expedita vero, illum tempora enim non impedit eaque in optio voluptates accusamus maiores architecto dolorem nemo numquam asperiores tenetur nisi, aut error recusandae possimus doloribus beatae labore, et. Dolorem illo mollitia quibusdam, voluptatem distinctio. Aspernatur laborum, similique odio! Saepe, sapiente. Explicabo nemo exercitationem dolore possimus ad odit tempora. Enim cupiditate beatae quas hic omnis ut rerum a veritatis, eum ea molestiae corporis maiores quod autem, sunt placeat! Libero error quas architecto voluptates maiores, quaerat vel tenetur nihil eum incidunt! Fugiat delectus qui possimus esse officiis, modi quo facere. Minus totam, nesciunt commodi. Consequatur asperiores soluta, velit, quae, ratione perferendis dolor cupiditate eum natus ullam quam ipsum omnis quisquam ducimus! Ad et itaque hic qui, sed modi, autem aliquid doloremque non veniam necessitatibus fugiat impedit expedita officiis facere quisquam quod animi beatae dolore nobis explicabo accusamus est ipsa! Expedita corporis, laudantium doloremque repellat, natus laborum voluptates omnis in aliquam blanditiis laboriosam dolorum nesciunt debitis culpa distinctio, ipsum vero dolorem ullam, nulla vel autem nobis. Nisi fugit illum eligendi magnam saepe facilis, consequatur veritatis beatae quisquam similique nam odit quo quibusdam, dolores officia, nemo perspiciatis dolore ipsa libero fugiat unde. Ipsum facere vel qui necessitatibus consectetur! Necessitatibus quasi consequuntur cumque est doloribus iure, harum at veniam, eligendi dolores voluptas illo hic ipsam eos a quia accusamus ea. Beatae tempore fugit numquam velit vel tenetur consectetur ut eius natus, maxime corporis blanditiis est impedit sequi unde exercitationem aliquid autem facere rem illo temporibus dolore doloribus culpa quasi! Vitae repellendus totam velit ex repudiandae magnam amet quae aut quasi qui, ut error odit alias ab quod labore enim laborum. Dicta laboriosam accusantium provident nulla.</p>
+  <div class="titlte">
+    <h3>Cursos recien horneados</h3>
+  </div>
+    <div class="content">
+      <div class="row">
+        <div class="box" id="caja">
+        
+          <div class="col-sm-6 col-md-4" >
+            <div class="thumbnail-img-box">
+              <img class="imgnew" src="img/p14.jpg">
+              <h2>TITULO DE LA IMG</h2>
+              <div class="caption-img-box">
+                <p class="parnews">informacion de la imagen
+                <br><br><br><br><br><br>
+                info info</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
 
@@ -280,7 +301,9 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+      <script src="js/main.js"></script>
       <script type="text/javascript">
+
       $(document).on('ready', function() {
         $(".regular").slick({
           dots: true,
@@ -300,7 +323,33 @@
           infinite: true,
           variableWidth: true
         });
-      });
+  
+
+
+
+
+      var pull    = $('#pull');
+      menu    = $('.headtwo ul');
+      menu2 = $('.headtwo');
+      subme = $('header');
+
+      menuHeight  = menu.height();
+        $(pull).on('click', function(e) {
+          e.preventDefault();
+          menu.slideToggle();
+          menu2.css({top: "-15%"});
+          subme.height(700);
+        });
+        $(window).resize(function(){
+            var w = $(window).width();
+            if(w > 320 && menu.is(':hidden')) {
+              menu.removeAttr('style');
+              menu2.css({top: "0%"});
+              subme.height(600);
+            }
+        });
+  });   
+  </script>
       </script>
     </body>
     </html>
