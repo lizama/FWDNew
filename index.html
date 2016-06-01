@@ -3,22 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>FWD</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/lumen/bootstrap.min.css" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+   <script src="js/index.js"></script>
 
-  <link href='http://fonts.googleapis.com/css?family=Poiret+One|Lobster+Two' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="css/fonts.css" media="screen" title="no title" charset="utf-8">
+   <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/lumen/bootstrap.min.css" rel="stylesheet">
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <link href='http://fonts.googleapis.com/css?family=Poiret+One|Lobster+Two' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+   <link rel="stylesheet" href="css/fonts.css" media="screen" title="no title" charset="utf-8">
+   <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+   <script type="text/javascript" src="js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="js/registro.js"></script>
+   <script type="text/javascript" src="js/script.js"></script>
+   <script type="text/javascript" src="node_modules/suitcss-components-flex-embed/index.js"></script>
+   <!-- Slider Slick-->
+   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 
-  <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript" src="node_modules/suitcss-components-flex-embed/index.js"></script>
-  <!-- Slider Slick-->
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+   <link rel="stylesheet" type="text/css" href="css/thumnail.css">
+   <style type="text/css">
 
-  <link rel="stylesheet" type="text/css" href="css/thumnail.css">
+
+
+
   <style type="text/css">
 
   html, body {
@@ -65,12 +76,12 @@
 
             <div class="navbar-header">
                 <a class="navbar-brand" href="#">
-                    <img alt="" class="fwdNavbar" style="width:75% !important; max-width:80% !important; top:0;" src="img/fwd1.png">
+                    <img id="imagen"  alt="" class="fwdNavbar" style="width: 41px; height: 45px;" src="images/fwd.png" >
                 </a>
             </div>
             <ul class="nav navbar-nav navbar-right sing-up">
                 <li ><a href="#" id="title-brando">CREA UN CONCURSO</a></li>
-                <li ><a href="#" id="title-brando" class="e-singup"><span class="sing-upc">SING UP</span></a></li>
+                <li >  <button type="button" id="button-une-nav" data-toggle="modal" data-target=".entrarModal" class="baseIcono"><img src="FWDICON.png" width="15px" > ¡ÚNETE!</button></li>
                 <li><a href="#" id="title-brando">ENTRA</a></li>
                 <li><a href="#" id="title-brando"></a></li>
             <ul class="dropdown-menu">
@@ -80,6 +91,8 @@
 
 
     </nav>
+
+
 
 
   <header id="head">
@@ -156,17 +169,39 @@
   </nav>
 
   <div id="pushBack"></div>
-  <!-- Seccion de noticias -->
-  <section>
-  <div class="titlte">
-    <h3>Cursos recien horneados</h3>
-  </div>
-    <div class="content">
-      <div class="row">
-        <div class="box" id="caja">
-        
-          <div class="col-sm-6 col-md-4" >
-            <div class="thumbnail-img-box">
+
+<br><br>
+  <div class="news-title">
+ <h3 class="news-title">¿Qué hay de Nuevo en la comunidad de FWD?  </h3>
+
+</div>
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--Seccion arriba de noticias -->
+
+    <section class="news">
+
+     <div class="container-fluid">
+
+          <div class="row">
+                <div class="col-sm-3" >    <div class="thumbnail-img-box">
               <img class="imgnew" src="img/p14.jpg">
               <h2>TITULO DE LA IMG</h2>
               <div class="caption-img-box">
@@ -176,6 +211,117 @@
               </div>
             </div>
           </div>
+
+       <div class="col-sm-3" >
+
+        <div class="box-gray" style="background-color: #666; padding-top:5%; padding-bottom:5%;">
+                    <div align="center">  <img class="img-responsive"  src="img/fwd1.png" /> </div>
+
+
+                  </div>
+
+                     <div class="box-aqua">
+                      <span>ESTO ES LO DE HOY</span><br>
+                      <strong>MARZO 31, 2016</strong>
+
+                  </div><br>
+
+
+                  <div class="box-aqua">
+                      <div class="row" style="">
+                        <div class="col-xs-7" style="background-color:#666; text-align:center; height:22px; ">
+                          <a data-toggle="tab" href="#menu1" style="color:white">Noticias FWD</a>
+                        </div>
+                        <div class="col-xs-5" style="background-color:orange; text-align:center;height:22px">
+                          <a data-toggle="tab" href="#home" style="color:white">Twitter</a>
+                        </div>
+                      </div>
+
+                  </div>
+
+
+
+
+
+
+<!--
+        <div class="row">
+
+
+
+            <div class="col-xs">
+                <div for="tab1" class=" col-xs-6"><span class="news-title " style="background-color:green; text-align:center;font-size:15px" ><a data-toggle="tab" href="#menu1">Noticias FWD</a></span></div>
+
+                <div for="tab2"> <span class="news-title col-xs-6" href="#home"><a data-toggle="tab" href="#home">Twitter</a></span></div>
+
+            </div>
+
+
+        </div>-->
+
+
+
+
+
+
+
+
+        <div class="col-xs">
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active" style="text-align:center;background-color:yellow;">
+                    <h3>Twitter</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        , quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div id="menu1" class="tab-pane fade" style="text-align:center;background-color:orange;">
+                    <h3>Noticias FWD</h3>
+                    <p>Cheto paga a sus empleados.</p>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                    <h3>Menu 2</h3>
+                    <p>Some content in menu 2.</p>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+           </div>
+
+                  <div class="col-sm-6" >
+                    <video controls class="img-responsive">
+                        <source src="video/oso.mp4" type="video/mp4"></source>
+                    </video>
+                  </div>
+
+
+          </div>
+</div>
+</section>
+
+  <!-- termina la seccion arriba de noticias -->
+
+
+  <!-- Seccion de noticias -->
+  <section>
+      <div class="titlte">
+        <h3 class="news-title">Cursos recién horneados</h3>
+      </div>
+    <div class="content">
+      <div class="row">
+        <div class="box" id="caja">
+
+
         </div>
       </div>
     </div>
@@ -183,7 +329,6 @@
 
 
   <section>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis quasi, natus, suscipit est, at enim obcaecati ipsam tempore ipsa nisi explicabo incidunt, molestias magnam quos autem perferendis quis maxime sit. Expedita vero, illum tempora enim non impedit eaque in optio voluptates accusamus maiores architecto dolorem nemo numquam asperiores tenetur nisi, aut error recusandae possimus doloribus beatae labore, et. Dolorem illo mollitia quibusdam, voluptatem distinctio. Aspernatur laborum, similique odio! Saepe, sapiente. Explicabo nemo exercitationem dolore possimus ad odit tempora. Enim cupiditate beatae quas hic omnis ut rerum a veritatis, eum ea molestiae corporis maiores quod autem, sunt placeat! Libero error quas architecto voluptates maiores, quaerat vel tenetur nihil eum incidunt! Fugiat delectus qui possimus esse officiis, modi quo facere. Minus totam, nesciunt commodi. Consequatur asperiores soluta, velit, quae, ratione perferendis dolor cupiditate eum natus ullam quam ipsum omnis quisquam ducimus! Ad et itaque hic qui, sed modi, autem aliquid doloremque non veniam necessitatibus fugiat impedit expedita officiis facere quisquam quod animi beatae dolore nobis explicabo accusamus est ipsa! Expedita corporis, laudantium doloremque repellat, natus laborum voluptates omnis in aliquam blanditiis laboriosam dolorum nesciunt debitis culpa distinctio, ipsum vero dolorem ullam, nulla vel autem nobis. Nisi fugit illum eligendi magnam saepe facilis, consequatur veritatis beatae quisquam similique nam odit quo quibusdam, dolores officia, nemo perspiciatis dolore ipsa libero fugiat unde. Ipsum facere vel qui necessitatibus consectetur! Necessitatibus quasi consequuntur cumque est doloribus iure, harum at veniam, eligendi dolores voluptas illo hic ipsam eos a quia accusamus ea. Beatae tempore fugit numquam velit vel tenetur consectetur ut eius natus, maxime corporis blanditiis est impedit sequi unde exercitationem aliquid autem facere rem illo temporibus dolore doloribus culpa quasi! Vitae repellendus totam velit ex repudiandae magnam amet quae aut quasi qui, ut error odit alias ab quod labore enim laborum. Dicta laboriosam accusantium provident nulla.</p>
   </section>
 
   <section id="slider">
@@ -223,6 +368,9 @@
       </div>
     </section>
   </section>
+
+
+
 
 
   <section>
@@ -324,7 +472,7 @@
           infinite: true,
           variableWidth: true
         });
-  
+
 
 
 
@@ -349,8 +497,139 @@
               subme.height(600);
             }
         });
-  });   
+  });
   </script>
       </script>
+
+
+ <!-- Modales -->
+
+                <div class="modal fade entrarModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="ModalUnete">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+    <!-- Sign Secundario-->
+      <div class="col-md-12 container-registro" style="margin: auto;" id="modal2">
+      <div class="row">
+        <div class="col-md-12" id="header-registro">
+          <img src="GOFWDCTA.png" class="img-responsive" id="header-img">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center" id="une">
+          <span><small>Únete con <a href="#" class="refSign">Facebook</a>, <a href="#" class="refSign">Google</a> o <a href="#" class="refSign">LinkedIn</a></small></span>
+        </div>
+      </div>
+      <div class="row">
+        <form>
+          <div class="col-md-12 divInput">
+            <div class="absoluto"></div>
+            <input type="text" placeholder="Nombre(s)" class="form-inputs">
+          </div>
+          <div class="col-md-12 divInput">
+            <div class="absoluto"></div>
+            <input type="text" placeholder="Apellido(s)" class="form-inputs">
+          </div>
+          <div class="col-md-12 divInput">
+            <div class="absoluto"></div>
+            <input type="text" placeholder="Correo Electrónico" class="form-inputs">
+          </div>
+          <div class="col-md-12 divInput">
+            <div class="absoluto"></div>
+            <input type="text" placeholder="Password" class="form-inputs">
+          </div>
+          <div class="col-md-12 divPadding">
+            <div class="row">
+              <div class="col-md-1">
+                <input type="checkbox" id="check">
+              </div>
+              <div class="col-md-10">
+                <small class="small-text">Me gustaría enterarme de los concursos mas recientes y de noticias de emprendimiento.</small>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-md-12 divPadding text-center">
+          <small class="Xsmall-text">Al unirte, aceptas los <a href="#" class="refSign">Términos de Uso</a> y la <a href="#" class="refSign">Política de Privacidad</a>.</small>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 divPadding text-center">
+          <button  id="button-une"><img src="FWDICON.png" height="30px">  ¡ÚNETE!</button>
+        </div>
+      </div>
+      <div class="dividir"></div>
+      <div class="row">
+        <div class="col-md-12 divPadding" id="divEntrar">
+          <div class="row">
+            <div class="col-xs-8 col-sm-7 col-md-7">
+              <span><small>¿Ya eres miembro?</small></span>
+            </div>
+            <div class="col-xs-4 colsm-5 col-md-5">
+              <button id="button-entrar"><img src="SignUp.png">    ENTRA</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sign Principal-->
+      <div class="col-md-12 container-registro" style="margin: auto;" id="modal1">
+      <div class="row">
+        <div class="col-md-12" id="header-registro">
+          <img src="GOFWDCTA.png" class="img-responsive" id="header-img">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <button class="botonSignR borderFB"><div class="absolutoSign"></div>Con Facebook</button>
+        </div>
+      </div>
+      <div class="dividir"></div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <button class="botonSignR borderG"><div class="absolutoSign"></div>Con Google</button>
+        </div>
+      </div>
+      <div class="dividir"></div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <button class="botonSignR borderLK"><div class="absolutoSign"></div>Con LinkedIn</button>
+        </div>
+      </div>
+      <div class="dividir"></div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <button class="botonSignR borderM" id="mailButton">Con tu e-mail</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 divPadding">
+          <small class="Xsmall-text"> Al unirte, aceptas los <a href="#" class="refSign">Términos de Uso</a> y la <a href="#" class="refSign">Política de Privacidad</a>.</small>
+        </div>
+      </div>
+      <div class="dividir"></div>
+      <div class="row">
+        <div class="col-md-12 divPadding divTopLine" id="divEntrar">
+          <div class="row">
+            <div class="col-xs-8 col-sm-7 col-md-7">
+              <span><small>¿Ya eres miembro?</small></span>
+            </div>
+            <div class="col-xs-4 colsm-5 col-md-5">
+              <button id="button-entrar"><img src="SignUp.png">    ENTRA</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+                <!-- termina modales -->
+
+
     </body>
+
+
     </html>

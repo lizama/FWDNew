@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/registro.js"></script>
+	<title>Login</title>
+</head>
+<body>
+
+
+<br>
+
+<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".registrarModal">Registrar</button>-->
+
+<!--<div class="modal fade registrarModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+        <div class="col-md-12 container-registro" style="margin: auto;" id="">
+			<div class="row">
+				<div class="col-md-12" id="header-registro">
+					<img src="GOFWDCTA.png" class="img-responsive" id="header-img">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center" id="une">
+					<span><small>Únete con <a href="#" class="refSign">Facebook</a>, <a href="#" class="refSign">Google</a> o <a href="#" class="refSign">LinkedIn</a></small></span>
+				</div>
+			</div>
+			<div class="row">
+				<form>
+					<div class="col-md-12 divInput">
+						<div class="absoluto"></div>
+						<input type="text" placeholder="Nombre(s)" class="form-inputs">
+					</div>
+					<div class="col-md-12 divInput">
+						<div class="absoluto"></div>
+						<input type="text" placeholder="Apellido(s)" class="form-inputs">
+					</div>
+					<div class="col-md-12 divInput">
+						<div class="absoluto"></div>
+						<input type="text" placeholder="Correo Electrónico" class="form-inputs">
+					</div>
+					<div class="col-md-12 divInput">
+						<div class="absoluto"></div>
+						<input type="text" placeholder="Password" class="form-inputs">
+					</div>
+					<div class="col-md-12 divPadding">
+						<div class="row">
+							<div class="col-md-1">
+								<input type="checkbox" id="check">
+							</div>
+							<div class="col-md-10">
+								<small class="small-text">Me gustaría enterarme de los concursos mas recientes y de noticias de emprendimiento.</small>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="row">
+				<div class="col-md-12 divPadding text-center">
+					<small class="Xsmall-text">Al unirte, aceptas los <a href="#" class="refSign">Términos de Uso</a> y la <a href="#" class="refSign">Política de Privacidad</a>.</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 divPadding text-center">
+					<button  id="button-une"><img src="FWDICON.png" height="30px">  ¡ÚNETE!</button>
+				</div>
+			</div>
+			<div class="dividir"></div>
+			<div class="row">
+				<div class="col-md-12 divPadding" id="divEntrar">
+					<div class="row">
+						<div class="col-xs-8 col-sm-7 col-md-7">
+							<span><small>¿Ya eres miembro?</small></span>
+						</div>
+						<div class="col-xs-4 colsm-5 col-md-5">
+							<button id="button-entrar"><img src="SignUp.png">    ENTRA</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>-->
+<!-- /////////////////////////////////////// Entrar ////////////////////////////////////////-->
+<button type="button" id="button-une-nav" data-toggle="modal" data-target=".entrarModal"><img src="FWDICON.png" width="15px"> ¡ÚNETE!</button>
+
+<div class="modal fade entrarModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="ModalUnete">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+    <!-- Sign Secundario-->
+    	<div class="col-md-12 container-registro" style="margin: auto;" id="modal2">
+			<div class="row">
+				<div class="col-md-12" id="header-registro">
+					<img src="GOFWDCTA.png" class="img-responsive" id="header-img">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center" id="une">
+					<span><small>Únete con <a href="#" class="refSign">Facebook</a>, <a href="#" class="refSign">Google</a> o <a href="#" class="refSign">LinkedIn</a></small></span>
+				</div>
+			</div>
+			<div class="row">
+				<form>
+					<div class="col-md-12 divInput">
+						<div class="absoluto"></div>
+						<input type="text" placeholder="Nombre(s)" class="form-inputs">
+					</div>
+					<div class="col-md-12 divInput">
+						<div class="absoluto"></div>
+						<input type="text" placeholder="Apellido(s)" class="form-inputs">
+					</div>
+					<div class="col-md-12 divInput">
+						<div class="absoluto"></div>
+						<input type="text" placeholder="Correo Electrónico" class="form-inputs">
+					</div>
+					<div class="col-md-12 divInput">
+						<div class="absoluto"></div>
+						<input type="text" placeholder="Password" class="form-inputs">
+					</div>
+					<div class="col-md-12 divPadding">
+						<div class="row">
+							<div class="col-md-1">
+								<input type="checkbox" id="check">
+							</div>
+							<div class="col-md-10">
+								<small class="small-text">Me gustaría enterarme de los concursos mas recientes y de noticias de emprendimiento.</small>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="row">
+				<div class="col-md-12 divPadding text-center">
+					<small class="Xsmall-text">Al unirte, aceptas los <a href="#" class="refSign">Términos de Uso</a> y la <a href="#" class="refSign">Política de Privacidad</a>.</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 divPadding text-center">
+					<button  id="button-une"><img src="FWDICON.png" height="30px">  ¡ÚNETE!</button>
+				</div>
+			</div>
+			<div class="dividir"></div>
+			<div class="row">
+				<div class="col-md-12 divPadding" id="divEntrar">
+					<div class="row">
+						<div class="col-xs-8 col-sm-7 col-md-7">
+							<span><small>¿Ya eres miembro?</small></span>
+						</div>
+						<div class="col-xs-4 colsm-5 col-md-5">
+							<button id="button-entrar"><img src="SignUp.png">    ENTRA</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    <!-- Sign Principal-->
+    	<div class="col-md-12 container-registro" style="margin: auto;" id="modal1">
+			<div class="row">
+				<div class="col-md-12" id="header-registro">
+					<img src="GOFWDCTA.png" class="img-responsive" id="header-img">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<button class="botonSignR borderFB"><div class="absolutoSign"></div>Con Facebook</button>
+				</div>
+			</div>
+			<div class="dividir"></div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<button class="botonSignR borderG"><div class="absolutoSign"></div>Con Google</button>
+				</div>
+			</div>
+			<div class="dividir"></div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<button class="botonSignR borderLK"><div class="absolutoSign"></div>Con LinkedIn</button>
+				</div>
+			</div>
+			<div class="dividir"></div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<button class="botonSignR borderM" id="mailButton">Con tu e-mail</button>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-12 divPadding">
+					<small class="Xsmall-text"> Al unirte, aceptas los <a href="#" class="refSign">Términos de Uso</a> y la <a href="#" class="refSign">Política de Privacidad</a>.</small>
+				</div>
+			</div>
+			<div class="dividir"></div>
+			<div class="row">
+				<div class="col-md-12 divPadding divTopLine" id="divEntrar">
+					<div class="row">
+						<div class="col-xs-8 col-sm-7 col-md-7">
+							<span><small>¿Ya eres miembro?</small></span>
+						</div>
+						<div class="col-xs-4 colsm-5 col-md-5">
+							<button id="button-entrar"><img src="SignUp.png">    ENTRA</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

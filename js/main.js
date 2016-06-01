@@ -7,21 +7,30 @@ $(document).ready(function(){
 
 		for(var i = 0; i < data.length;i++){
 			console.log(data[i].titulo);
-			$('<div class="col-sm-6 col-md-4" ><div class="thumbnail-img-box"><img class="imgnew" src="'+data[i].fuente+'"><h2>'+data[i].titulo+'</h2><div class="caption-img-box"><p class="parnews">'+data[i].contenido+'</p></div></div></div>').appendTo("#caja");;
+			$('<div class="col-sm-6 col-md-4" ><div class="thumbnail-img-box"><img class="imgnew" src="'+data[i].fuente+'"><h2>'+data[i].titulo+'</h2><div class="caption-img-box"><p class="parnews">'+data[i].contenido+'</p></div></div></div>').appendTo("#caja");
 		}
+
+
+			$('.thumbnail-img').hover(function () {
+	        $(this).find('.caption-img').slideDown(600); //.fadeIn(250)
+	    }, function () {
+	        $(this).find('.caption-img').slideUp(800); //.fadeOut(205)
+	    });
+
+	    $('.thumbnail-img-box').hover(function () {
+	        $(this).find('.caption-img-box').slideDown(900); //.fadeIn(250)
+	    }, function () {
+	        $(this).find('.caption-img-box').slideUp(850); //.fadeOut(205)
+    });
 	});
 
 
-	$('.thumbnail-img').hover(function () {
-        $(this).find('.caption-img').slideDown(250); //.fadeIn(250)
-    }, function () {
-        $(this).find('.caption-img').slideUp(250); //.fadeOut(205)
-    });
+	
 
-    $('.thumbnail-img-box').hover(function () {
-        $(this).find('.caption-img-box').slideDown(250); //.fadeIn(250)
+    $('.caption-img-box').hover(function () {
+        $(this).find('.parnews').slideDown(900); //.fadeIn(250)
     }, function () {
-        $(this).find('.caption-img-box').slideUp(250); //.fadeOut(205)
+        $(this).find('.parnews').slideUp(800); //.fadeOut(205)
     });
 
 	 $(window).scroll(function() {
